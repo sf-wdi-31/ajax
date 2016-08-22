@@ -1,11 +1,11 @@
 <!--
-Creator: <Name>
+Creator: Cory Fauver
 Market: SF
 -->
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-# Workshop Title
+# AJAX
 
 ### Why is this important?
 <!-- framing the "why" in big-picture/real world examples -->
@@ -17,9 +17,10 @@ Market: SF
 <!-- specific/measurable goal for students to achieve -->
 *After this workshop, developers will be able to:*
 
-- Objective 1
-- Objective 2
-- Objective 3
+- give an instance when AJAX would be used in your code
+- use AJAX to GET data from an API
+- find and read documentation for useful APIs
+- describe the meaning of `method:`, `url:`, and `onSuccess:` keys in jQuery's `$.ajax` syntax
 
 ### Where should we be now?
 <!-- call out the skills that are prerequisites -->
@@ -75,14 +76,8 @@ Refine the skills covered in this workshop with this [lab](#)
 
 
 
-# Intro to AJAX
 
-| Objectives |
-| :--- |
-| _Students will be able to:_ |
-| Give examples of useful APIs |
-| Explain why we use AJAX |
-| Use AJAX to GET data from an API |
+
 
 ## APIs
 
