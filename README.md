@@ -232,7 +232,7 @@ function onSubmitReqSuccess(json){
 
 ```
 
-Sometimes we'll need to include user input for our GET requests. For example, when searching Giphy for cat gifs, we would include a `data` attribute with an object indicating the value of `q`, the search query.
+Sometimes we'll need to include user input for our GET requests. For example, when searching Giphy for cat gifs, we would include a `data` attribute with a string indicating the value of `q`, the search query. (Note: `data` will accept an object also.)
 
 ```javascript
 // submit event on form
@@ -240,7 +240,7 @@ $('form').on('submit', function(event){
   $.ajax({
     method: 'GET',
     url: endpoint,
-    data: {q:'cats'},
+    data: 'q=cats',
     dataType: 'json',
     success: onSubmitReqSuccess
   });
@@ -251,7 +251,7 @@ function onSubmitReqSuccess(json){
   // process data
 }
 ```
-Often this data will come in through a form. Luckily, when it comes in through a form, jQuery provides a method called `serialize()` that transitions our form data into an object that we can just plug into the `data` attribute, like this:
+Often this data will come in through a form. Luckily, when it comes in through a form, jQuery provides a method called `serialize()` that transitions our form data into a string that we can just plug into the `data` attribute, like this:
 
 ```javascript
 // submit event on form
